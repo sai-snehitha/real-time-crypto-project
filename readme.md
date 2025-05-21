@@ -1,3 +1,22 @@
+This project showcases a real-time cryptocurrency data pipeline and trading dashboard built with Docker, Redpanda, Streamlit, and Python. It simulates a live trading system by ingesting streaming market data, processing it with custom strategies, and visualizing strategy performance dynamically.
+
+📌 Key Features
+Live Market Feed via Redpanda (Kafka alternative)
+
+TradeBot Engine that applies custom strategies (dynamic, balanced, ultra_aggressive)
+
+Real-Time Visualization with Streamlit, including:
+
+Candle data viewer
+
+Strategy balances and value change over time
+
+Latest model metrics (Accuracy, F1 Score, etc.)
+
+Data Persistence using DuckDB for lightweight storage
+
+Modular Services: Separate Docker containers for data ingestion, training, inference, and trading logic
+
 # Cryptocurrency TradeBots
 
 ## Steps 1: Start up the docker containers
@@ -73,23 +92,6 @@
 
 - **Save and exit:**
   Press `Esc`, then type `:wq` and press `Enter`
-
-
-
-## Grading Rubric
-
-| Points | Requirement                            | How It Will Be Graded                                                                                    |
-| ------ | -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| 30     | crypto-trades topic                    | Grader will ask you to show new trades.                                                                  |
-| 30     | crypto-candles topic                   | Grader will ask you to show new candles.                                                                 |
-| 30     | Run `last_predictions`                 | Grader will ask you to run the file and print the last 20 predictions.                                  |
-| 30     | 12 trained models in data folder       | Grader will ask you to show the folder (SSH into the box using VS Code and display the folder contents). |
-| 30     | Streamlit app shows 30 days of candles | Grader will inspect your Streamlit app to verify it displays 30 days worth of candle data.               |
-| 30     | 12 hours worth of trading              | Grader will inspect your Streamlit app for at least 12 hours of trading data.                            |
-| 20     | 24 hours worth of trading              | Grader will inspect your Streamlit app for at least 24 hours of trading data.                            |
-| 10     | 48 hours worth of trading              | Grader will inspect your Streamlit app for at least 48 hours of trading data.                            |
-| 5      | 72 hours worth of trading              | Grader will inspect your Streamlit app for at least 72 hours of trading data.                            |
-| 30     | public streamlit app                   | Grader will inspect your Streamlit app                                                              s    |
 
 
 ## Feature Information
